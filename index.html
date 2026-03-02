@@ -1,0 +1,1273 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Léo Besson - Charpentier Zingueur | Charpente, Menuiseries, Zinguerie |
+      Andernos-les-Bains
+    </title>
+    <meta
+      name="description"
+      content="Léo Besson, charpentier zingueur à Andernos-les-Bains. Charpente traditionnelle et industrielle, ossature bois, menuiseries intérieures et extérieures, zinguerie. Neuf, rénovation, extension. Devis gratuit."
+    />
+    <link rel="canonical" href="https://www.bessonboisetzinc.fr/" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#c4942e" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta
+      property="og:title"
+      content="Léo Besson - Bois & Zinc | Artisan Charpentier"
+    />
+    <meta
+      property="og:description"
+      content="Artisan charpentier : bois, charpente, zinc. Réalisations sur mesure pour particuliers et professionnels. Demandez un devis."
+    />
+    <meta property="og:url" content="https://www.bessonboisetzinc.fr/" />
+    <meta property="og:site_name" content="Léo Besson - Besson Bois et Zinc" />
+    <meta
+      property="og:image"
+      content="https://www.bessonboisetzinc.fr/og-image.jpg"
+    />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Léo Besson - Charpentier Zingueur | Besson Bois et Zinc"
+    />
+    <meta
+      name="twitter:description"
+      content="Charpente, menuiseries, zinguerie. Neuf, rénovation, extension. Andernos-les-Bains. Devis gratuit."
+    />
+
+    <!-- Données structurées (SEO) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Léo Besson - Besson Bois et Zinc",
+        "description": "Charpentier zingueur : charpente traditionnelle et industrielle, ossature bois, menuiseries intérieures et extérieures, zinguerie. Neuf, rénovation, extension.",
+        "url": "https://www.bessonboisetzinc.fr/",
+        "image": "https://www.bessonboisetzinc.fr/og-image.jpg",
+        "telephone": "+33612640612",
+        "email": "leobesson33510@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "9 rue René Largillière",
+          "addressLocality": "Andernos-les-Bains",
+          "postalCode": "33510",
+          "addressCountry": "FR"
+        },
+        "priceRange": "€€",
+        "areaServed": "FR"
+      }
+    </script>
+
+    <!-- Google Font : titres plus caractère -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              beige: {
+                50: "#faf8f5",
+                100: "#f5f0e8",
+                200: "#e8dfd0",
+                300: "#d4c4a8",
+                400: "#c4ad8a",
+                500: "#b8996b",
+              },
+              gold: {
+                400: "#d4a853",
+                500: "#c4942e",
+                600: "#a67c1f",
+              },
+              anthracite: "#2c2c2c",
+              anthraciteLight: "#4a4a4a",
+            },
+            fontFamily: {
+              sans: [
+                "system-ui",
+                "-apple-system",
+                "BlinkMacSystemFont",
+                "Segoe UI",
+                "Roboto",
+                "sans-serif",
+              ],
+              serif: ["Cormorant Garamond", "Georgia", "serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      /* Légers ajustements hors Tailwind */
+      html {
+        scroll-behavior: smooth;
+      }
+      .img-cover {
+        object-fit: cover;
+      }
+
+      /* ---------- Texture & fond ---------- */
+      body {
+        position: relative;
+      }
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        z-index: 0;
+        pointer-events: none;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+        opacity: 1;
+      }
+      .texture-dots {
+        background-image: radial-gradient(
+          rgba(196, 148, 46, 0.04) 1px,
+          transparent 1px
+        );
+        background-size: 24px 24px;
+      }
+      .texture-lines {
+        background-image: repeating-linear-gradient(
+          -2deg,
+          transparent,
+          transparent 2px,
+          rgba(212, 196, 168, 0.08) 2px,
+          rgba(212, 196, 168, 0.08) 3px
+        );
+      }
+
+      /* Menu mobile : panneau déroulant plein écran */
+      #nav-links.nav-links-mobile.mobile-open {
+        display: flex !important;
+        position: fixed;
+        top: 4rem;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background: rgba(250, 248, 245, 0.98);
+        backdrop-filter: blur(8px);
+        padding: 1rem 1.5rem 1.5rem;
+        gap: 0.25rem;
+        border-bottom: 1px solid rgba(232, 223, 208, 0.6);
+        box-shadow: 0 12px 24px -8px rgba(44, 44, 44, 0.08);
+        z-index: 40;
+      }
+      #nav-links.nav-links-mobile.mobile-open li a {
+        display: block;
+        padding: 0.75rem 1rem;
+        border-radius: 0.375rem;
+      }
+      #nav-links.nav-links-mobile.mobile-open li a:hover {
+        background: rgba(232, 223, 208, 0.4);
+      }
+      @media (min-width: 768px) {
+        #nav-links.nav-links-mobile.mobile-open {
+          position: static;
+          flex-direction: row;
+          background: transparent;
+          backdrop-filter: none;
+          padding: 0;
+          border: none;
+          box-shadow: none;
+        }
+        #nav-links.nav-links-mobile.mobile-open li a {
+          display: inline;
+          padding: 0;
+        }
+        #nav-links.nav-links-mobile.mobile-open li a:hover {
+          background: transparent;
+        }
+      }
+
+      /* ---------- Animations ---------- */
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(28px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      /* Hero : apparition au chargement avec décalage */
+      .anim-hero {
+        opacity: 0;
+        animation: fadeInUp 0.75s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+      }
+      .anim-hero-1 {
+        animation-delay: 0.1s;
+      }
+      .anim-hero-2 {
+        animation-delay: 0.25s;
+      }
+      .anim-hero-3 {
+        animation-delay: 0.4s;
+      }
+      .anim-hero-4 {
+        animation-delay: 0.55s;
+      }
+      .anim-hero-5 {
+        animation-delay: 0.7s;
+      }
+
+      /* Sections : apparition au scroll (état initial) */
+      .anim-on-scroll {
+        opacity: 0;
+        transform: translateY(32px);
+        transition:
+          opacity 0.65s cubic-bezier(0.22, 1, 0.36, 1),
+          transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+      }
+      .anim-on-scroll.revealed {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* Cartes : décalage en cascade */
+      .anim-card {
+        opacity: 0;
+        transform: translateY(24px);
+        transition:
+          opacity 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+          transform 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+          box-shadow 0.25s ease,
+          border-color 0.25s ease;
+      }
+      .anim-card.revealed {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* Survol : léger soulèvement des cartes */
+      .hover-lift {
+        transition:
+          transform 0.25s ease,
+          box-shadow 0.25s ease;
+      }
+      .hover-lift:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 24px -8px rgba(44, 44, 44, 0.12);
+      }
+
+      /* Bouton CTA : léger brillant au survol */
+      .btn-gold {
+        transition:
+          transform 0.2s ease,
+          box-shadow 0.2s ease,
+          background-color 0.2s ease;
+      }
+      .btn-gold:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px -4px rgba(196, 148, 46, 0.4);
+      }
+
+      /* ---------- Modal réalisation ---------- */
+      .modal-overlay {
+        position: fixed;
+        inset: 0;
+        z-index: 100;
+        background: rgba(44, 44, 44, 0.6);
+        backdrop-filter: blur(4px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        opacity: 0;
+        visibility: hidden;
+        transition:
+          opacity 0.3s ease,
+          visibility 0.3s ease;
+      }
+      .modal-overlay.is-open {
+        opacity: 1;
+        visibility: visible;
+      }
+      .modal-box {
+        background: var(--tw-bg-opacity, 1);
+        background-color: rgb(245 240 232);
+        max-width: 32rem;
+        width: 100%;
+        max-height: calc(100vh - 2rem);
+        border-radius: 1rem;
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        border: 1px solid rgba(212, 196, 168, 0.6);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        transform: scale(0.95);
+        transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+      }
+      .modal-overlay.is-open .modal-box {
+        transform: scale(1);
+      }
+      .modal-box .modal-image-wrap {
+        aspect-ratio: 4 / 3;
+        overflow: hidden;
+        background: #e8dfd0;
+      }
+      .modal-box .modal-image-wrap img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .modal-box .modal-body {
+        padding: 1.5rem;
+        overflow-y: auto;
+      }
+      .modal-close {
+        position: absolute;
+        top: 0.75rem;
+        right: 0.75rem;
+        z-index: 2;
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 0.5rem;
+        border: none;
+        background: rgba(255, 255, 255, 0.95);
+        color: #2c2c2c;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        transition:
+          background 0.2s,
+          color 0.2s;
+      }
+      .modal-close:hover {
+        background: #c4942e;
+        color: white;
+      }
+      .modal-box {
+        position: relative;
+      }
+
+      /* Titres avec police serif */
+      .font-serif-title {
+        font-family:
+          Cormorant Garamond,
+          Georgia,
+          serif;
+      }
+      /* Ligne or sous les titres de section */
+      .section-title {
+        display: inline-block;
+        padding-bottom: 0.35rem;
+        border-bottom: 2px solid rgba(196, 148, 46, 0.5);
+      }
+    </style>
+  </head>
+  <body class="bg-beige-100 text-anthracite antialiased font-sans relative">
+    <!-- ========== HEADER & NAV ========== -->
+    <header
+      class="fixed top-0 left-0 right-0 z-50 bg-beige-100/95 backdrop-blur-sm border-b border-beige-300/50"
+    >
+      <nav
+        class="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16 relative"
+        aria-label="Navigation principale"
+      >
+        <a
+          href="#accueil"
+          class="flex items-center shrink-0 py-1.5"
+          aria-label="Léo Besson - Accueil"
+        >
+          <img
+            src="logo-besson.png"
+            alt="Léo Besson - Charpentier Zingueur"
+            class="h-10 sm:h-12 w-auto object-contain"
+            width="130"
+            height="40"
+          />
+        </a>
+
+        <button
+          id="mobile-menu-btn"
+          class="md:hidden text-anthracite focus:outline-none p-2 -mr-2"
+          type="button"
+          aria-label="Ouvrir le menu"
+          aria-expanded="false"
+          aria-controls="nav-links"
+        >
+          <svg id="mobile-menu-icon-open" class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+          <svg id="mobile-menu-icon-close" class="w-7 h-7 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+
+        <ul
+          id="nav-links"
+          class="nav-links-mobile hidden md:flex items-center gap-8 text-sm font-medium text-anthraciteLight"
+          role="menubar"
+        >
+          <li role="none"><a href="#presentation" class="hover:text-gold-600 transition-colors" role="menuitem">Présentation</a></li>
+          <li role="none"><a href="#prestations" class="hover:text-gold-600 transition-colors" role="menuitem">Prestations</a></li>
+          <li role="none"><a href="#chantiers" class="hover:text-gold-600 transition-colors" role="menuitem">Chantiers</a></li>
+          <li role="none"><a href="#contact" class="px-5 py-2 bg-anthracite text-white rounded-md hover:bg-gold-600 transition-colors" role="menuitem">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="relative z-10 pb-20 md:pb-0">
+      <!-- ========== HERO (image de fond + overlay) ========== -->
+      <section
+        id="accueil"
+        class="hero-section min-h-screen flex flex-col justify-center pt-14 sm:pt-16 px-4 sm:px-6 pb-20 relative overflow-hidden"
+      >
+        <!-- Image de fond : remplacez l'URL par votre propre image (bois, atelier, charpente) -->
+        <div class="absolute inset-0 z-0 overflow-hidden" aria-hidden="true">
+          <img
+            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=80"
+            alt=""
+            class="w-full h-full img-cover object-center parallax-bg"
+            loading="eager"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-b from-anthracite/80 via-anthracite/55 to-beige-100/92"
+          ></div>
+          <div class="absolute inset-0 bg-beige-200/20"></div>
+        </div>
+        <div class="max-w-3xl mx-auto text-center relative z-10">
+          <h1
+            class="anim-hero anim-hero-1 font-serif-title text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white tracking-tight mb-4 drop-shadow-sm"
+          >
+            Léo Besson
+          </h1>
+          <p
+            class="anim-hero anim-hero-2 text-xl sm:text-2xl text-gold-400 font-medium mb-1"
+          >
+            Charpentier · Zingueur
+          </p>
+          <p
+            class="anim-hero anim-hero-2 text-beige-200/90 text-sm sm:text-base uppercase tracking-widest mb-4"
+          >
+            Charpente • Zinguerie · Neuf · Rénovation · Extension
+          </p>
+          <p
+            class="anim-hero anim-hero-3 text-beige-100 text-lg sm:text-xl mt-6 mb-10 max-w-xl mx-auto"
+          >
+            Charpente traditionnelle et industrielle, ossature bois, menuiseries
+            intérieures et extérieures, zinguerie. Particuliers et
+            professionnels.
+          </p>
+          <a
+            href="#contact"
+            class="anim-hero anim-hero-4 inline-block px-8 py-3.5 bg-gold-500 hover:bg-gold-600 text-white font-medium rounded-lg shadow-lg hover:shadow-xl transition-all focus:outline-none focus:ring-2 focus:ring-gold-400 focus:ring-offset-2 focus:ring-offset-beige-100 btn-gold"
+          >
+            Demander un devis
+          </a>
+        </div>
+      </section>
+
+      <!-- ========== PRÉSENTATION (avec texture légère) ========== -->
+      <section
+        id="presentation"
+        class="py-16 sm:py-24 px-4 sm:px-6 bg-beige-200/60 texture-dots relative"
+      >
+        <div class="max-w-5xl mx-auto">
+          <h2
+            class="font-serif-title text-2xl sm:text-3xl font-bold text-anthracite text-center mb-12 anim-on-scroll section-title mx-auto"
+          >
+            Présentation
+          </h2>
+          <div
+            class="grid md:grid-cols-5 gap-10 md:gap-12 items-center anim-on-scroll"
+          >
+            <div class="md:col-span-3 text-center md:text-left">
+              <p class="text-anthraciteLight leading-relaxed mb-4">
+                <strong class="text-anthracite">Léo Besson</strong>, charpentier
+                zingueur à
+                <strong class="text-anthracite">Andernos-les-Bains</strong>, met
+                son expertise au service de vos projets en neuf, rénovation et
+                extension. Charpente traditionnelle et industrielle, ossature
+                bois, bardage, terrasses et pergolas, menuiseries (PVC, alu,
+                bois, mixte), zinguerie : chaque réalisation est pensée dans le
+                respect des traditions et des normes.
+              </p>
+              <p class="text-anthraciteLight leading-relaxed">
+                Particuliers et professionnels : nous vous accompagnons de
+                l’étude à la pose pour un résultat durable et soigné.
+              </p>
+            </div>
+            <div class="md:col-span-2 flex justify-center">
+              <img
+                src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80"
+                alt="Charpente et travail du bois"
+                class="rounded-xl shadow-lg border border-beige-300/60 w-full max-w-sm img-cover aspect-[4/3] object-center"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== PRESTATIONS (texture lignes) ========== -->
+      <section
+        id="prestations"
+        class="py-16 sm:py-24 px-4 sm:px-6 texture-lines bg-beige-50/80"
+      >
+        <div class="max-w-5xl mx-auto">
+          <h2
+            class="font-serif-title text-2xl sm:text-3xl font-bold text-anthracite text-center mb-12 anim-on-scroll section-title mx-auto"
+          >
+            Prestations
+          </h2>
+          <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+            <!-- Charpente & Zinguerie -->
+            <article
+              class="anim-card hover-lift bg-white rounded-xl shadow-sm border border-beige-300/60 p-6 hover:shadow-md hover:border-gold-400/40 hover:bg-beige-50/80 transition-colors duration-200"
+              data-delay="0"
+            >
+              <div
+                class="w-12 h-12 rounded-lg bg-gold-500/10 flex items-center justify-center mb-4 text-gold-600"
+                aria-hidden="true"
+              >
+                <svg
+                  class="w-7 h-7"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.8"
+                    d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-lg font-semibold text-anthracite mb-2">
+                Charpente · Zinguerie
+              </h3>
+              <p class="text-anthraciteLight text-sm leading-relaxed">
+                Charpente traditionnelle, industrielle, ossature bois, bardage,
+                terrasses bois, pergolas. Couverture zinc, faîtages, évacuation
+                des eaux.
+              </p>
+            </article>
+            <!-- Menuiseries extérieures -->
+            <article
+              class="anim-card hover-lift bg-white rounded-xl shadow-sm border border-beige-300/60 p-6 hover:shadow-md hover:border-gold-400/40 hover:bg-beige-50/80 transition-colors duration-200"
+              data-delay="1"
+            >
+              <div
+                class="w-12 h-12 rounded-lg bg-gold-500/10 flex items-center justify-center mb-4 text-gold-600"
+                aria-hidden="true"
+              >
+                <svg
+                  class="w-7 h-7"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.8"
+                    d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-lg font-semibold text-anthracite mb-2">
+                Menuiseries extérieures
+              </h3>
+              <p class="text-anthraciteLight text-sm leading-relaxed">
+                PVC, alu, bois et mixte® : portes, portes de garage, portails,
+                portillons. Stores bannes, brise-soleil. Volets battants,
+                roulants, coulissants.
+              </p>
+            </article>
+            <!-- Menuiseries intérieures -->
+            <article
+              class="anim-card hover-lift bg-white rounded-xl shadow-sm border border-beige-300/60 p-6 hover:shadow-md hover:border-gold-400/40 hover:bg-beige-50/80 transition-colors duration-200"
+              data-delay="2"
+            >
+              <div
+                class="w-12 h-12 rounded-lg bg-gold-500/10 flex items-center justify-center mb-4 text-gold-600"
+                aria-hidden="true"
+              >
+                <svg
+                  class="w-7 h-7"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.8"
+                    d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-lg font-semibold text-anthracite mb-2">
+                Menuiseries intérieures
+              </h3>
+              <p class="text-anthraciteLight text-sm leading-relaxed">
+                Portes déco, cuisines, verrières, claustras, escaliers,
+                garde-corps. Placards, stores, rideaux, volets intérieurs.
+                Lambris, parquets, statifs.
+              </p>
+            </article>
+            <!-- Isolation & entretien -->
+            <article
+              class="anim-card hover-lift bg-white rounded-xl shadow-sm border border-beige-300/60 p-6 hover:shadow-md hover:border-gold-400/40 hover:bg-beige-50/80 transition-colors duration-200"
+              data-delay="3"
+            >
+              <div
+                class="w-12 h-12 rounded-lg bg-gold-500/10 flex items-center justify-center mb-4 text-gold-600"
+                aria-hidden="true"
+              >
+                <svg
+                  class="w-7 h-7"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.8"
+                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-lg font-semibold text-anthracite mb-2">
+                Isolation & entretien
+              </h3>
+              <p class="text-anthraciteLight text-sm leading-relaxed">
+                Isolation des combles. Nettoyage anti-mousse toitures et
+                terrasses.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== CHANTIERS (Portfolio dynamique) ========== -->
+      <section
+        id="chantiers"
+        class="py-16 sm:py-24 px-4 sm:px-6 bg-beige-200/50 texture-dots"
+      >
+        <div class="max-w-5xl mx-auto">
+          <h2
+            class="font-serif-title text-2xl sm:text-3xl font-bold text-anthracite text-center mb-12 anim-on-scroll section-title mx-auto"
+          >
+            Réalisations
+          </h2>
+          <!-- Conteneur généré par JavaScript à partir du tableau CHANTIERS_DATA -->
+          <div
+            id="chantiers-gallery"
+            class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"
+          >
+            <!-- Les cartes sont insérées ici par le script -->
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== CONTACT ========== -->
+      <section
+        id="contact"
+        class="py-16 sm:py-24 px-4 sm:px-6 bg-beige-100 texture-lines"
+      >
+        <div class="max-w-5xl mx-auto">
+          <h2
+            class="font-serif-title text-2xl sm:text-3xl font-bold text-anthracite text-center mb-12 section-title mx-auto anim-on-scroll"
+          >
+            Contact
+          </h2>
+          <div class="grid lg:grid-cols-5 gap-10 lg:gap-12 anim-on-scroll">
+            <!-- Coordonnées -->
+            <div class="lg:col-span-2 space-y-6">
+              <p class="font-semibold text-anthracite text-lg">Léo Besson</p>
+              <p class="text-anthraciteLight text-sm">Charpentier · Zingueur</p>
+              <ul class="space-y-3 text-anthraciteLight text-sm">
+                <li>
+                  <a
+                    href="tel:+33612640612"
+                    class="flex items-center gap-2 text-anthracite hover:text-gold-600 transition-colors"
+                  >
+                    <svg
+                      class="w-5 h-5 shrink-0 text-gold-500"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.8"
+                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                      />
+                    </svg>
+                    06 12 64 06 12
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="mailto:leobesson33510@gmail.com"
+                    class="flex items-center gap-2 text-anthracite hover:text-gold-600 transition-colors break-all"
+                  >
+                    <svg
+                      class="w-5 h-5 shrink-0 text-gold-500"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.8"
+                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                      />
+                    </svg>
+                    leobesson33510@gmail.com
+                  </a>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg
+                    class="w-5 h-5 shrink-0 text-gold-500 mt-0.5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1.8"
+                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1.8"
+                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
+                  </svg>
+                  <span
+                    >9 rue René Largillière<br />33510 Andernos-les-Bains</span
+                  >
+                </li>
+              </ul>
+              <div class="pt-2 flex flex-wrap gap-4">
+                <a
+                  href="https://www.instagram.com/besson_boisetzinc/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center gap-1.5 text-anthracite hover:text-gold-600 transition-colors text-sm"
+                  aria-label="Instagram"
+                >
+                  <svg
+                    class="w-5 h-5"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.218 4.771 1.091 6.352 2.966 1.581 1.875 2.766 4.558 2.766 7.01 0 2.005-.328 4.074-.922 5.98-.614 1.925-1.445 2.766-2.766 2.766-2.452 0-4.135-1.185-6.352-2.966-1.581-1.875-2.766-4.558-2.766-7.01 0-1.906.328-3.976.922-5.98.614-1.925 1.445-2.766 2.766-2.766 2.452 0 4.135 1.185 6.352 2.966 1.581 1.875 2.766 4.558 2.766 7.01 0 2.005-.328 4.074-.922 5.98-.614 1.925-1.445 2.766-2.766 2.766-2.452 0-4.135-1.185-6.352-2.966-1.581-1.875-2.766-4.558-2.766-7.01 0-1.906.328-3.976.922-5.98.614-1.925 1.445-2.766 2.766-2.766zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.25.273 5.25.273 8.25.273 11.135 2.166 13.5 4.5 4.5 6.834 6.865 8.727 9.75 8.727 12.75c0 3.025 1.938 5.418 4.5 7.5 2.562-2.082 4.5-4.475 4.5-7.5 0-3.025-1.938-5.418-4.5-7.5-2.562 2.082-4.5 4.475-4.5 7.5 0 2.969 1.937 5.363 4.5 7.5 2.563-2.137 4.5-4.531 4.5-7.5 0-2.969-1.937-5.363-4.5-7.5zM12 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"
+                    />
+                  </svg>
+                  @besson_boisetzinc
+                </a>
+                <a
+                  href="https://www.bessonboisetzinc.fr"
+                  class="inline-flex items-center gap-1.5 text-anthracite hover:text-gold-600 transition-colors text-sm"
+                >
+                  bessonboisetzinc.fr
+                </a>
+              </div>
+            </div>
+            <!-- Formulaire -->
+            <div class="lg:col-span-3">
+              <!-- Formulaire envoyé vers Formspree. Remplacez YOUR_FORM_ID par votre ID : https://formspree.io/ -->
+              <form
+                class="space-y-5"
+                id="form-contact"
+                action="https://formspree.io/f/YOUR_FORM_ID"
+                method="POST"
+              >
+                <input
+                  type="text"
+                  name="_gotcha"
+                  class="hidden"
+                  tabindex="-1"
+                  autocomplete="off"
+                  aria-hidden="true"
+                />
+                <div>
+                  <label
+                    for="nom"
+                    class="block text-sm font-medium text-anthracite mb-1"
+                    >Nom</label
+                  >
+                  <input
+                    type="text"
+                    id="nom"
+                    name="nom"
+                    required
+                    class="w-full px-4 py-3 rounded-lg border border-beige-300 bg-white text-anthracite placeholder-anthraciteLight/60 focus:outline-none focus:ring-2 focus:ring-gold-400 focus:border-transparent"
+                    placeholder="Votre nom"
+                  />
+                </div>
+                <div>
+                  <label
+                    for="email"
+                    class="block text-sm font-medium text-anthracite mb-1"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    class="w-full px-4 py-3 rounded-lg border border-beige-300 bg-white text-anthracite placeholder-anthraciteLight/60 focus:outline-none focus:ring-2 focus:ring-gold-400 focus:border-transparent"
+                    placeholder="votre@email.fr"
+                  />
+                </div>
+                <div>
+                  <label
+                    for="telephone"
+                    class="block text-sm font-medium text-anthracite mb-1"
+                    >Téléphone</label
+                  >
+                  <input
+                    type="tel"
+                    id="telephone"
+                    name="telephone"
+                    class="w-full px-4 py-3 rounded-lg border border-beige-300 bg-white text-anthracite placeholder-anthraciteLight/60 focus:outline-none focus:ring-2 focus:ring-gold-400 focus:border-transparent"
+                    placeholder="06 00 00 00 00"
+                  />
+                </div>
+                <div>
+                  <label
+                    for="message"
+                    class="block text-sm font-medium text-anthracite mb-1"
+                    >Message</label
+                  >
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    required
+                    class="w-full px-4 py-3 rounded-lg border border-beige-300 bg-white text-anthracite placeholder-anthraciteLight/60 focus:outline-none focus:ring-2 focus:ring-gold-400 focus:border-transparent resize-y"
+                    placeholder="Décrivez votre projet ou votre demande..."
+                  ></textarea>
+                </div>
+                <div
+                  id="form-status"
+                  class="text-sm min-h-[1.25rem]"
+                  aria-live="polite"
+                ></div>
+                <button
+                  type="submit"
+                  id="form-submit-btn"
+                  class="btn-gold w-full sm:w-auto px-8 py-3.5 bg-gold-500 hover:bg-gold-600 text-white font-medium rounded-lg shadow-md hover:shadow-lg transition-all focus:outline-none focus:ring-2 focus:ring-gold-400 focus:ring-offset-2 focus:ring-offset-beige-100 disabled:opacity-70 disabled:pointer-events-none"
+                >
+                  Envoyer
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="bg-anthracite text-beige-200 py-12 px-4 sm:px-6">
+      <div class="max-w-5xl mx-auto">
+        <div
+          class="flex flex-col sm:flex-row items-center justify-between gap-6 text-sm"
+        >
+          <div
+            class="flex flex-wrap items-center justify-center gap-x-6 gap-y-1 text-beige-300/90"
+          >
+            <a
+              href="tel:+33612640612"
+              class="hover:text-gold-400 transition-colors"
+              >06 12 64 06 12</a
+            >
+            <a
+              href="mailto:leobesson33510@gmail.com"
+              class="hover:text-gold-400 transition-colors"
+              >leobesson33510@gmail.com</a
+            >
+            <span>9 rue René Largillière, 33510 Andernos-les-Bains</span>
+          </div>
+          <a href="#accueil" class="shrink-0">
+            <img
+              src="logo-besson.png"
+              alt="Léo Besson"
+              class="h-8 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
+            />
+          </a>
+        </div>
+        <div
+          class="mt-8 pt-8 border-t border-beige-300/20 text-center text-beige-300/70 text-sm"
+        >
+          <p>
+            © <span id="annee"></span> Léo Besson – Besson Bois et Zinc. Tous
+            droits réservés.
+          </p>
+          <p class="mt-1">
+            <a
+              href="https://www.bessonboisetzinc.fr"
+              class="hover:text-gold-400 transition-colors"
+              >www.bessonboisetzinc.fr</a
+            >
+            · Mentions légales · Politique de confidentialité
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ========== MODAL RÉALISATION ========== -->
+    <div
+      id="modal-realisation"
+      class="modal-overlay"
+      aria-hidden="true"
+      aria-labelledby="modal-title"
+    >
+      <div
+        class="modal-box"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal-title"
+      >
+        <button
+          type="button"
+          class="modal-close"
+          id="modal-close"
+          aria-label="Fermer"
+        >
+          <svg
+            class="w-5 h-5"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+        <div class="modal-image-wrap">
+          <img id="modal-image" src="" alt="" />
+        </div>
+        <div class="modal-body">
+          <h2
+            id="modal-title"
+            class="text-xl font-bold text-anthracite mb-3"
+          ></h2>
+          <p
+            id="modal-description"
+            class="text-anthraciteLight leading-relaxed"
+          ></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA Appeler fixe (mobile) -->
+    <a
+      href="tel:+33612640612"
+      class="fixed bottom-6 left-4 right-4 z-40 md:hidden flex items-center justify-center gap-2 py-3.5 px-4 bg-gold-500 hover:bg-gold-600 text-white font-medium rounded-lg shadow-lg btn-gold"
+      aria-label="Appeler le 06 12 64 06 12"
+    >
+      <svg class="w-5 h-5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+      </svg>
+      Appeler
+    </a>
+
+    <!-- ========== SCRIPT ========== -->
+    <script>
+      // --- Année dynamique dans le footer ---
+      document.getElementById("annee").textContent = new Date().getFullYear();
+
+      // --- Menu burger mobile : toggle du panneau ---
+      (function () {
+        var btn = document.getElementById("mobile-menu-btn");
+        var navLinks = document.getElementById("nav-links");
+        var iconOpen = document.getElementById("mobile-menu-icon-open");
+        var iconClose = document.getElementById("mobile-menu-icon-close");
+        if (!btn || !navLinks) return;
+
+        function openMenu() {
+          navLinks.classList.add("mobile-open");
+          btn.setAttribute("aria-expanded", "true");
+          btn.setAttribute("aria-label", "Fermer le menu");
+          if (iconOpen) iconOpen.classList.add("hidden");
+          if (iconClose) iconClose.classList.remove("hidden");
+        }
+        function closeMenu() {
+          navLinks.classList.remove("mobile-open");
+          btn.setAttribute("aria-expanded", "false");
+          btn.setAttribute("aria-label", "Ouvrir le menu");
+          if (iconOpen) iconOpen.classList.remove("hidden");
+          if (iconClose) iconClose.classList.add("hidden");
+        }
+        function toggleMenu() {
+          if (navLinks.classList.contains("mobile-open")) closeMenu();
+          else openMenu();
+        }
+
+        btn.addEventListener("click", toggleMenu);
+        navLinks.querySelectorAll("a").forEach(function (link) {
+          link.addEventListener("click", closeMenu);
+        });
+        document.addEventListener("keydown", function (e) {
+          if (e.key === "Escape" && navLinks.classList.contains("mobile-open")) closeMenu();
+        });
+      })();
+
+      // --- Parallax sur l'image Hero ---
+      window.addEventListener("scroll", function () {
+        var scrolled = window.scrollY;
+        var parallaxBg = document.querySelector(".parallax-bg");
+        if (parallaxBg) {
+          parallaxBg.style.transform = "translateY(" + scrolled * 0.3 + "px)";
+        }
+      });
+
+      // --- Animations au scroll : Intersection Observer ---
+      function observeReveal() {
+        var observer = new IntersectionObserver(
+          function (entries) {
+            entries.forEach(function (entry) {
+              if (!entry.isIntersecting) return;
+              var el = entry.target;
+              var delay = el.getAttribute("data-delay");
+              if (delay !== null) {
+                el.style.transitionDelay = delay * 0.08 + "s";
+              }
+              el.classList.add("revealed");
+              observer.unobserve(el);
+            });
+          },
+          { rootMargin: "0px 0px -40px 0px", threshold: 0.05 },
+        );
+
+        document
+          .querySelectorAll(".anim-on-scroll, .anim-card")
+          .forEach(function (el) {
+            observer.observe(el);
+          });
+      }
+
+      // --- Modal réalisation (détail au clic sur une carte) ---
+      function openModalRealisation(chantier) {
+        var overlay = document.getElementById("modal-realisation");
+        var img = document.getElementById("modal-image");
+        var title = document.getElementById("modal-title");
+        var desc = document.getElementById("modal-description");
+        if (!overlay || !img || !title || !desc) return;
+        img.src = chantier.image_url;
+        img.alt = chantier.titre;
+        title.textContent = chantier.titre;
+        desc.textContent = chantier.description;
+        overlay.classList.add("is-open");
+        overlay.setAttribute("aria-hidden", "false");
+        document.body.style.overflow = "hidden";
+        document.getElementById("modal-close").focus();
+      }
+
+      function closeModalRealisation() {
+        var overlay = document.getElementById("modal-realisation");
+        if (!overlay) return;
+        overlay.classList.remove("is-open");
+        overlay.setAttribute("aria-hidden", "true");
+        document.body.style.overflow = "";
+      }
+
+      (function () {
+        var overlay = document.getElementById("modal-realisation");
+        var btnClose = document.getElementById("modal-close");
+        if (!overlay || !btnClose) return;
+        btnClose.addEventListener("click", closeModalRealisation);
+        overlay.addEventListener("click", function (e) {
+          if (e.target === overlay) closeModalRealisation();
+        });
+        document.addEventListener("keydown", function (e) {
+          if (e.key === "Escape" && overlay.classList.contains("is-open")) {
+            closeModalRealisation();
+          }
+        });
+      })();
+
+      // Observer déclenché une fois après création des cartes chantiers (voir plus bas)
+
+      // ========================================================================
+      // DONNÉES DES CHANTIERS (Portfolio)
+      // ========================================================================
+      // Pour ajouter un nouveau chantier : duplique un bloc d'objet ci-dessous
+      // et remplis titre, image_url (lien vers l'image), et description.
+      // Exemple :
+      //   {
+      //     titre: "Extension toiture zinc",
+      //     image_url: "https://exemple.com/mon-image.jpg",
+      //     description: "Couverture zinc sur extension en bois."
+      //   },
+      var CHANTIERS_DATA = [
+        {
+          titre: "Charpente traditionnelle",
+          image_url:
+            "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80",
+          description:
+            "Charpente bois pour maison individuelle, pose traditionnelle.",
+        },
+        {
+          titre: "Couverture zinc",
+          image_url:
+            "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&q=80",
+          description: "Toiture zinc et évacuation des eaux pluviales.",
+        },
+        {
+          titre: "Ossature bois",
+          image_url:
+            "https://images.unsplash.com/photo-1513467535987-fd81bc7d62f8?w=800&q=80",
+          description: "Extension en ossature bois, menuiserie sur mesure.",
+        },
+        {
+          titre: "Faîtage zinc",
+          image_url:
+            "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
+          description: "Faîtage et noues en zinc pour rénovation toiture.",
+        },
+        {
+          titre: "Terrasse bois",
+          image_url:
+            "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80",
+          description: "Terrasse et garde-corps en bois massif.",
+        },
+        {
+          titre: "Rénovation charpente",
+          image_url:
+            "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80",
+          description: "Renfort et reprise de charpente existante.",
+        },
+      ];
+
+      // Génération de la galerie à partir de CHANTIERS_DATA
+      (function () {
+        var container = document.getElementById("chantiers-gallery");
+        if (!container) return;
+
+        CHANTIERS_DATA.forEach(function (chantier, index) {
+          var card = document.createElement("article");
+          card.className =
+            "anim-card hover-lift bg-white rounded-xl shadow-sm border border-beige-300/60 overflow-hidden hover:shadow-md hover:border-gold-400/40 cursor-pointer";
+          card.setAttribute("data-delay", String(index));
+          card.setAttribute("data-index", String(index));
+          card.innerHTML =
+            '<div class="aspect-[4/3] overflow-hidden bg-beige-200">' +
+            '<img src="' +
+            chantier.image_url +
+            '" alt="' +
+            escapeHtml(chantier.titre) +
+            '" class="w-full h-full img-cover" loading="lazy">' +
+            "</div>" +
+            '<div class="p-4">' +
+            '<h3 class="font-semibold text-anthracite mb-1">' +
+            escapeHtml(chantier.titre) +
+            "</h3>" +
+            '<p class="text-anthraciteLight text-sm">' +
+            escapeHtml(chantier.description) +
+            "</p>" +
+            "</div>";
+          card.addEventListener("click", function () {
+            openModalRealisation(chantier);
+          });
+          container.appendChild(card);
+        });
+
+        // Révéler les cartes chantiers au scroll (observer déclenché après génération)
+        observeReveal();
+
+        function escapeHtml(text) {
+          var div = document.createElement("div");
+          div.textContent = text;
+          return div.innerHTML;
+        }
+      })();
+
+      // --- Formulaire contact (Formspree) ---
+      (function () {
+        var form = document.getElementById("form-contact");
+        var status = document.getElementById("form-status");
+        var btn = document.getElementById("form-submit-btn");
+        var action = form.getAttribute("action");
+
+        if (!action || action.indexOf("YOUR_FORM_ID") !== -1) {
+          status.innerHTML =
+            '<span class="text-anthraciteLight">Configurez Formspree : remplacez <code class="bg-beige-200 px-1 rounded">YOUR_FORM_ID</code> dans l’attribut <code>action</code> du formulaire par votre ID (voir <a href="https://formspree.io/" class="text-gold-600 underline">formspree.io</a>).</span>';
+          return;
+        }
+
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          status.textContent = "";
+          status.className = "text-sm min-h-[1.25rem] text-anthraciteLight";
+          btn.disabled = true;
+          btn.textContent = "Envoi en cours…";
+
+          var body = new FormData(form);
+          fetch(action, {
+            method: "POST",
+            body: body,
+            headers: { Accept: "application/json" },
+          })
+            .then(function (res) {
+              if (res.ok) {
+                status.className = "text-sm min-h-[1.25rem] text-green-700";
+                status.textContent =
+                  "Message envoyé. Nous vous recontacterons rapidement.";
+                form.reset();
+              } else {
+                status.className = "text-sm min-h-[1.25rem] text-red-700";
+                status.textContent =
+                  "Une erreur est survenue. Réessayez ou contactez-nous par téléphone.";
+              }
+            })
+            .catch(function () {
+              status.className = "text-sm min-h-[1.25rem] text-red-700";
+              status.textContent = "Erreur réseau. Réessayez plus tard.";
+            })
+            .finally(function () {
+              btn.disabled = false;
+              btn.textContent = "Envoyer";
+            });
+        });
+      })();
+    </script>
+  </body>
+</html>
