@@ -675,12 +675,21 @@
           >
             Réalisations
           </h2>
-          <!-- Conteneur généré par JavaScript à partir du tableau CHANTIERS_DATA -->
-          <div
-            id="chantiers-gallery"
-            class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"
-          >
-            <!-- Les cartes sont insérées ici par le script -->
+          <!-- Galerie désactivée : floutée + overlay "À venir" -->
+          <div class="relative min-h-[280px] rounded-xl overflow-hidden">
+            <div
+              id="chantiers-gallery"
+              class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 blur-md select-none pointer-events-none"
+              aria-hidden="true"
+            >
+              <!-- Les cartes sont insérées ici par le script -->
+            </div>
+            <div
+              class="absolute inset-0 flex items-center justify-center bg-beige-100/80 backdrop-blur-[2px] pointer-events-auto"
+              aria-hidden="false"
+            >
+              <span class="text-xl sm:text-2xl font-semibold text-anthracite tracking-wide">À venir</span>
+            </div>
           </div>
         </div>
       </section>
