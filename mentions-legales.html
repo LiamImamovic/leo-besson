@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="fr">
+<html lang="fr" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mentions légales – Léo Besson – Besson Bois et Zinc</title>
+    <title>Mentions légales | Léo Besson – Charpentier Zingueur</title>
     <meta
       name="description"
       content="Mentions légales du site Besson Bois et Zinc – Léo Besson, charpentier zingueur à Andernos-les-Bains."
@@ -12,118 +12,210 @@
       rel="canonical"
       href="https://www.bessonboisetzinc.fr/mentions-legales.html"
     />
-    <link rel="icon" href="favicon/favicon.ico" sizes="any" />
-    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+    <meta name="theme-color" content="#c4942e" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
         theme: {
           extend: {
             colors: {
-              beige: { 100: "#f5f0e8", 200: "#e8dfd0", 300: "#d4c4a8" },
+              beige: {
+                50: "#faf8f5",
+                100: "#f5f0e8",
+                200: "#e8dfd0",
+                300: "#d4c4a8",
+                400: "#c4ad8a",
+                500: "#b8996b",
+              },
               gold: { 400: "#d4a853", 500: "#c4942e", 600: "#a67c1f" },
               anthracite: "#2c2c2c",
               anthraciteLight: "#4a4a4a",
             },
-            fontFamily: { serif: ["Cormorant Garamond", "Georgia", "serif"] },
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+              serif: ["Cormorant Garamond", "serif"],
+            },
+            animation: {
+              "fade-in-up":
+                "fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards",
+            },
+            keyframes: {
+              fadeInUp: {
+                "0%": { opacity: "0", transform: "translateY(20px)" },
+                "100%": { opacity: "1", transform: "translateY(0)" },
+              },
+            },
           },
         },
       };
     </script>
+
     <style>
-      html {
-        scroll-behavior: smooth;
-      }
+      /* Texture subtile en arrière-plan */
       body::before {
         content: "";
         position: fixed;
         inset: 0;
-        z-index: 0;
+        z-index: -1;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
         pointer-events: none;
-        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
       }
     </style>
   </head>
+
   <body
-    class="bg-beige-100 text-anthracite antialiased font-sans relative min-h-screen"
+    class="bg-beige-50 text-anthracite antialiased font-sans flex flex-col min-h-screen"
   >
     <header
-      class="fixed top-0 left-0 right-0 z-50 bg-beige-100/95 backdrop-blur-sm border-b border-beige-300/50"
+      class="fixed top-0 w-full z-50 bg-beige-50/80 backdrop-blur-md border-b border-beige-200/50 transition-all duration-300"
     >
-      <nav
-        class="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16"
-        aria-label="Navigation principale"
+      <div
+        class="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-20"
       >
         <a
           href="index.html"
-          class="flex items-center shrink-0 py-1.5"
-          aria-label="Léo Besson - Accueil"
+          class="flex items-center group"
+          aria-label="Retour à l'accueil"
         >
-          <img
-            src="logo-besson.png"
-            alt="Léo Besson - Charpentier Zingueur"
-            class="h-20 sm:h-24 w-auto object-contain"
-            width="130"
-            height="40"
-          />
+          <span
+            class="font-serif text-2xl font-bold tracking-wide text-anthracite group-hover:text-gold-500 transition-colors duration-300"
+          >
+            Léo Besson<span class="text-gold-500">.</span>
+          </span>
         </a>
+
         <a
-          href="index.html#contact"
-          class="text-sm font-medium text-anthracite hover:text-gold-600 transition-colors"
-          >Contact</a
+          href="index.html"
+          class="hidden sm:flex items-center gap-2 text-sm font-medium text-anthraciteLight hover:text-gold-500 transition-colors"
         >
-      </nav>
+          <svg
+            class="w-4 h-4"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M10 19l-7-7m0 0l7-7m-7 7h18"
+            ></path>
+          </svg>
+          Retour au site
+        </a>
+      </div>
     </header>
 
-    <main class="relative z-10 pt-28 pb-16 px-4 sm:px-6">
-      <div class="max-w-3xl mx-auto">
-        <h1
-          class="font-serif text-3xl sm:text-4xl font-semibold text-anthracite mb-2"
-        >
-          Mentions légales
-        </h1>
-        <p class="text-anthraciteLight text-sm mb-10">
-          Dernière mise à jour : mars 2026
-        </p>
+    <main class="flex-grow pt-32 pb-24 px-4 sm:px-6">
+      <div class="max-w-3xl mx-auto animate-fade-in-up">
+        <div class="mb-10 text-center sm:text-left">
+          <a
+            href="index.html"
+            class="inline-flex sm:hidden items-center gap-2 text-sm font-medium text-gold-500 mb-6 hover:text-gold-600 transition-colors"
+          >
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M10 19l-7-7m0 0l7-7m-7 7h18"
+              ></path>
+            </svg>
+            Retour au site
+          </a>
+          <h1
+            class="font-serif text-4xl sm:text-5xl font-bold text-anthracite mb-4"
+          >
+            Mentions <span class="text-gold-500 italic">légales</span>
+          </h1>
+          <p
+            class="text-anthraciteLight text-sm font-medium tracking-wide uppercase"
+          >
+            Dernière mise à jour : mars 2026
+          </p>
+        </div>
 
-        <div
-          class="prose prose-anthracite max-w-none space-y-8 text-anthraciteLight"
+        <article
+          class="bg-white rounded-2xl shadow-sm border border-beige-200 p-8 sm:p-12 space-y-10"
         >
           <section>
-            <h2 class="font-serif text-xl font-semibold text-anthracite mb-2">
-              1. Éditeur du site
-            </h2>
-            <p>
-              Le site <strong>www.bessonboisetzinc.fr</strong> est édité par :
-            </p>
-            <p>
-              <strong>Liam Imamovic</strong>
-            </p>
-          </section>
-
-          <section>
-            <h2 class="font-serif text-xl font-semibold text-anthracite mb-2">
-              2. Hébergement
-            </h2>
-            <p>Vercel</p>
-            <p>
-              <a href="https://vercel.com" class="text-gold-600 hover:underline"
-                >https://vercel.com</a
+            <div class="flex items-center gap-4 mb-4">
+              <span
+                class="flex items-center justify-center w-8 h-8 rounded-full bg-beige-100 text-gold-600 font-serif font-bold text-lg"
+                >1</span
               >
-            </p>
+              <h2 class="font-serif text-2xl font-bold text-anthracite">
+                Éditeur du site
+              </h2>
+            </div>
+            <div class="text-anthraciteLight leading-relaxed space-y-2 pl-12">
+              <p>
+                Le site <strong>www.bessonboisetzinc.fr</strong> est édité par :
+              </p>
+              <p class="text-anthracite font-medium">Liam Imamovic</p>
+            </div>
           </section>
 
           <section>
-            <h2 class="font-serif text-xl font-semibold text-anthracite mb-2">
-              3. Propriété intellectuelle
-            </h2>
-            <p>
+            <div class="flex items-center gap-4 mb-4">
+              <span
+                class="flex items-center justify-center w-8 h-8 rounded-full bg-beige-100 text-gold-600 font-serif font-bold text-lg"
+                >2</span
+              >
+              <h2 class="font-serif text-2xl font-bold text-anthracite">
+                Hébergement
+              </h2>
+            </div>
+            <div class="text-anthraciteLight leading-relaxed space-y-2 pl-12">
+              <p>Vercel</p>
+              <a
+                href="https://vercel.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-gold-500 hover:text-gold-600 transition-colors inline-flex items-center gap-1"
+              >
+                https://vercel.com
+                <svg
+                  class="w-3 h-3"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </section>
+
+          <section>
+            <div class="flex items-center gap-4 mb-4">
+              <span
+                class="flex items-center justify-center w-8 h-8 rounded-full bg-beige-100 text-gold-600 font-serif font-bold text-lg"
+                >3</span
+              >
+              <h2 class="font-serif text-2xl font-bold text-anthracite">
+                Propriété intellectuelle
+              </h2>
+            </div>
+            <p class="text-anthraciteLight leading-relaxed pl-12">
               L’ensemble du contenu de ce site (textes, images, visuels,
               structure, logo) est protégé par le droit d’auteur et le droit des
               marques. Toute reproduction, représentation ou diffusion, totale
@@ -133,10 +225,16 @@
           </section>
 
           <section>
-            <h2 class="font-serif text-xl font-semibold text-anthracite mb-2">
-              4. Limitation de responsabilité
-            </h2>
-            <p>
+            <div class="flex items-center gap-4 mb-4">
+              <span
+                class="flex items-center justify-center w-8 h-8 rounded-full bg-beige-100 text-gold-600 font-serif font-bold text-lg"
+                >4</span
+              >
+              <h2 class="font-serif text-2xl font-bold text-anthracite">
+                Limitation de responsabilité
+              </h2>
+            </div>
+            <p class="text-anthraciteLight leading-relaxed pl-12">
               L’éditeur s’efforce d’assurer l’exactitude et la mise à jour des
               informations diffusées sur ce site. Toutefois, il ne peut garantir
               l’exactitude, la précision ou l’exhaustivité des informations.
@@ -146,10 +244,16 @@
           </section>
 
           <section>
-            <h2 class="font-serif text-xl font-semibold text-anthracite mb-2">
-              5. Liens hypertextes
-            </h2>
-            <p>
+            <div class="flex items-center gap-4 mb-4">
+              <span
+                class="flex items-center justify-center w-8 h-8 rounded-full bg-beige-100 text-gold-600 font-serif font-bold text-lg"
+                >5</span
+              >
+              <h2 class="font-serif text-2xl font-bold text-anthracite">
+                Liens hypertextes
+              </h2>
+            </div>
+            <p class="text-anthraciteLight leading-relaxed pl-12">
               Le site peut contenir des liens vers d’autres sites. L’éditeur
               n’exerce aucun contrôle sur ces sites et décline toute
               responsabilité quant à leur contenu. La création de liens vers ce
@@ -158,55 +262,62 @@
           </section>
 
           <section>
-            <h2 class="font-serif text-xl font-semibold text-anthracite mb-2">
-              6. Droit applicable
-            </h2>
-            <p>
+            <div class="flex items-center gap-4 mb-4">
+              <span
+                class="flex items-center justify-center w-8 h-8 rounded-full bg-beige-100 text-gold-600 font-serif font-bold text-lg"
+                >6</span
+              >
+              <h2 class="font-serif text-2xl font-bold text-anthracite">
+                Droit applicable
+              </h2>
+            </div>
+            <p class="text-anthraciteLight leading-relaxed pl-12">
               Les présentes mentions légales sont régies par le droit français.
               En cas de litige, les tribunaux français seront seuls compétents.
             </p>
           </section>
-        </div>
-
-        <p class="mt-12">
-          <a
-            href="index.html"
-            class="text-gold-600 hover:text-gold-500 font-medium"
-            >← Retour à l’accueil</a
-          >
-        </p>
+        </article>
       </div>
     </main>
 
     <footer
-      class="relative z-10 bg-anthracite text-beige-200 py-8 px-4 sm:px-6 mt-12"
+      class="bg-[#1a1a1a] text-beige-300 py-12 px-4 sm:px-6 border-t border-white/10 mt-auto"
     >
-      <div class="max-w-5xl mx-auto text-center text-beige-300/70 text-sm">
-        <p>
-          © <span id="annee"></span> Léo Besson – Besson Bois et Zinc. Tous
-          droits réservés.
-        </p>
-        <p class="mt-1">
-          <a href="index.html" class="hover:text-gold-400 transition-colors"
-            >www.bessonboisetzinc.fr</a
+      <div
+        class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6"
+      >
+        <div class="flex items-center gap-2">
+          <span class="font-serif text-2xl font-bold text-white"
+            >Léo Besson<span class="text-gold-500">.</span></span
           >
-          ·
+        </div>
+        <div class="flex flex-wrap justify-center gap-6 text-sm">
+          <a href="index.html" class="hover:text-gold-500 transition-colors"
+            >Accueil</a
+          >
           <a
-            href="mentions-legales.html"
-            class="hover:text-gold-400 transition-colors"
-            >Mentions légales</a
+            href="https://www.instagram.com/besson_boisetzinc/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:text-gold-500 transition-colors"
+            >Instagram</a
           >
-          ·
           <a
             href="politique-confidentialite.html"
-            class="hover:text-gold-400 transition-colors"
+            class="hover:text-gold-500 transition-colors"
             >Politique de confidentialité</a
           >
-        </p>
+        </div>
+        <div class="text-sm text-beige-300/60 text-center md:text-right">
+          &copy; <span id="year"></span> Léo Besson. Tous droits réservés.
+        </div>
       </div>
     </footer>
+
     <script>
-      document.getElementById("annee").textContent = new Date().getFullYear();
+      document.addEventListener("DOMContentLoaded", () => {
+        document.getElementById("year").textContent = new Date().getFullYear();
+      });
     </script>
   </body>
 </html>
