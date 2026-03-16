@@ -3,10 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Léo Besson - Charpentier Zingueur | Charpente & Zinguerie |
-      Andernos-les-Bains
-    </title>
+    <title>Léo Besson – Charpentier Zingueur à Andernos-les-Bains</title>
     <meta
       name="description"
       content="Léo Besson, charpentier zingueur à Andernos-les-Bains. Charpente traditionnelle, ossature bois, zinguerie, et tout aménagement bois. Devis gratuit."
@@ -14,89 +11,57 @@
     <link rel="canonical" href="https://www.bessonboisetzinc.fr/" />
     <meta name="theme-color" content="#c4942e" />
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+    <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png" />
+
+    <!-- Open Graph / Facebook, WhatsApp, LinkedIn -->
+    <meta property="og:title" content="Léo Besson – Charpentier Zingueur à Andernos-les-Bains" />
+    <meta property="og:description" content="Léo Besson, charpentier zingueur à Andernos-les-Bains. Charpente traditionnelle, ossature bois, zinguerie, et tout aménagement bois. Devis gratuit." />
+    <meta property="og:image" content="https://www.bessonboisetzinc.fr/og-image.png" />
+    <meta property="og:url" content="https://www.bessonboisetzinc.fr/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_FR" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Léo Besson – Charpentier Zingueur à Andernos-les-Bains" />
+    <meta name="twitter:description" content="Charpente traditionnelle, zinguerie et aménagement bois sur le Bassin d'Arcachon. Devis gratuit." />
+    <meta name="twitter:image" content="https://www.bessonboisetzinc.fr/og-image.png" />
+
+    <!-- Données structurées Schema.org (SEO local) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HomeAndConstructionBusiness",
+      "name": "Besson Bois et Zinc",
+      "alternateName": "Léo Besson – Charpentier Zingueur",
+      "telephone": "+33612640612",
+      "email": "leobesson33510@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Andernos-les-Bains",
+        "addressRegion": "Nouvelle-Aquitaine"
+      },
+      "url": "https://www.bessonboisetzinc.fr",
+      "description": "Charpente traditionnelle, ossature bois, zinguerie et aménagement bois sur le Bassin d'Arcachon. Devis gratuit."
+    }
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@300;400;500;600&display=swap"
+      as="style"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              beige: {
-                50: "#faf8f5",
-                100: "#f5f0e8",
-                200: "#e8dfd0",
-                300: "#d4c4a8",
-                400: "#c4ad8a",
-                500: "#b8996b",
-              },
-              gold: { 400: "#d4a853", 500: "#c4942e", 600: "#a67c1f" },
-              anthracite: "#2c2c2c",
-              anthraciteLight: "#4a4a4a",
-            },
-            fontFamily: {
-              sans: ["Inter", "sans-serif"],
-              serif: ["Cormorant Garamond", "serif"],
-            },
-            transitionTimingFunction: {
-              "out-expo": "cubic-bezier(0.16, 1, 0.3, 1)",
-            },
-            animation: {
-              "fade-in-up":
-                "fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards",
-            },
-            keyframes: {
-              fadeInUp: {
-                "0%": { opacity: "0", transform: "translateY(30px)" },
-                "100%": { opacity: "1", transform: "translateY(0)" },
-              },
-            },
-          },
-        },
-      };
-    </script>
-
-    <style>
-      /* Texture subtile en arrière-plan (Générée via SVG pour zéro requête HTTP) */
-      body::before {
-        content: "";
-        position: fixed;
-        inset: 0;
-        z-index: -1;
-        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
-        pointer-events: none;
-      }
-
-      /* Reveal on scroll base state */
-      .reveal {
-        opacity: 0;
-        transform: translateY(40px);
-        transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
-      }
-      .reveal.is-visible {
-        opacity: 1;
-        transform: translateY(0);
-      }
-
-      /* Effet Parallax matériel performant */
-      .parallax-wrapper {
-        clip-path: inset(0 0 0 0);
-      }
-      .parallax-image {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        z-index: -2;
-      }
-    </style>
+    <link rel="stylesheet" href="dist/output.css" />
   </head>
 
   <body
@@ -148,7 +113,9 @@
         <button
           id="mobile-menu-btn"
           class="md:hidden p-2 text-anthracite focus:outline-none"
-          aria-label="Menu"
+          aria-label="Ouvrir le menu"
+          aria-expanded="false"
+          aria-controls="mobile-nav"
         >
           <svg
             class="w-6 h-6 transition-transform duration-300"
@@ -202,9 +169,10 @@
         class="relative h-screen flex items-center justify-center parallax-wrapper"
       >
         <img
-          src="https://images.unsplash.com/photo-1592595399261-bcc1c2568bfc?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="Atelier de charpente"
+          src="Photos besson/IMG_20260223_112548.jpg"
+          alt="Atelier de charpente – Léo Besson, Besson Bois et Zinc"
           class="parallax-image"
+          fetchpriority="high"
         />
         <div
           class="absolute inset-0 bg-gradient-to-b from-anthracite/80 via-anthracite/60 to-beige-50"
@@ -269,8 +237,8 @@
                 class="absolute inset-0 bg-gold-500 translate-x-4 translate-y-4 rounded-xl opacity-20 transition-transform duration-500 group-hover:translate-x-6 group-hover:translate-y-6"
               ></div>
               <img
-                src="https://images.unsplash.com/photo-1603444796699-c29543ccdfb6?q=80&w=1285&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="Léo Besson au travail"
+                src="Photos besson/IMG_20260223_112310.jpg"
+                alt="Léo Besson au travail – charpente et zinguerie à Andernos-les-Bains"
                 class="relative z-10 w-full h-[500px] object-cover rounded-xl shadow-2xl"
                 loading="lazy"
               />
@@ -458,19 +426,22 @@
               class="grid sm:grid-cols-2 lg:grid-cols-3 gap-1 filter blur-sm scale-105 opacity-60 pointer-events-none bg-beige-200"
             >
               <img
-                src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&q=80"
-                alt="bg1"
+                src="Photos besson/IMG_20260223_112310.jpg"
+                alt="Réalisation charpente ou zinguerie – portfolio Besson Bois et Zinc en préparation"
                 class="w-full h-64 object-cover"
+                loading="lazy"
               />
               <img
-                src="https://images.unsplash.com/photo-1513467535987-fd81bc7d62f8?w=800&q=80"
-                alt="bg2"
+                src="Photos besson/IMG_20260223_112330.jpg"
+                alt="Chantier bois – réalisation Besson Bois et Zinc (portfolio en préparation)"
                 class="w-full h-64 object-cover"
+                loading="lazy"
               />
               <img
-                src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80"
-                alt="bg3"
+                src="Photos besson/IMG_20260223_112548.jpg"
+                alt="Travail de charpente ou zinguerie – portfolio Besson Bois et Zinc en préparation"
                 class="w-full h-64 object-cover hidden lg:block"
+                loading="lazy"
               />
             </div>
 
@@ -599,6 +570,7 @@
             <div
               class="lg:col-span-3 bg-white/5 p-8 sm:p-10 rounded-2xl border border-white/10 backdrop-blur-sm shadow-2xl"
             >
+              <!-- Vérifier que le form ID Formspree (mbdanznr) est actif et envoie bien à Léo Besson. Option : activer reCAPTCHA dans le dashboard Formspree pour renforcer l'anti-spam. -->
               <form
                 id="contact-form"
                 action="https://formspree.io/f/mbdanznr"
@@ -721,6 +693,11 @@
             class="hover:text-gold-500 transition-colors"
             >Mentions légales</a
           >
+          <a
+            href="politique-confidentialite.html"
+            class="hover:text-gold-500 transition-colors"
+            >Politique de confidentialité</a
+          >
         </div>
         <div class="text-sm text-beige-300/60">
           &copy; <span id="year"></span> Léo Besson. Tous droits réservés.
@@ -771,6 +748,11 @@
 
         const toggleMenu = () => {
           isMenuOpen = !isMenuOpen;
+          burgerBtn.setAttribute("aria-expanded", String(isMenuOpen));
+          burgerBtn.setAttribute(
+            "aria-label",
+            isMenuOpen ? "Fermer le menu" : "Ouvrir le menu",
+          );
           if (isMenuOpen) {
             mobileNav.classList.remove(
               "opacity-0",
