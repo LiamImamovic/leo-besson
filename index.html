@@ -11,7 +11,13 @@
       content="Besson Bois et Zinc, charpentier zingueur à Andernos-les-Bains. Charpente traditionnelle, ossature bois, zinguerie, et tout aménagement bois. Devis gratuit."
     />
     <link rel="canonical" href="https://www.bessonboisetzinc.fr/" />
+    <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#c4942e" />
+    <!-- Référencement local -->
+    <meta name="geo.region" content="FR-NAQ" />
+    <meta name="geo.placename" content="Andernos-les-Bains" />
+    <meta name="geo.position" content="44.7456;-1.0903" />
+    <meta name="ICBM" content="44.7456, -1.0903" />
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="favicon/favicon.ico" />
@@ -62,12 +68,27 @@
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Andernos-les-Bains",
-          "addressRegion": "Nouvelle-Aquitaine"
+          "addressRegion": "Nouvelle-Aquitaine",
+          "addressCountry": "FR"
         },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 44.7456,
+          "longitude": -1.0903
+        },
+        "areaServed": [
+          { "@type": "City", "name": "Andernos-les-Bains" },
+          { "@type": "Place", "name": "Bassin d'Arcachon" },
+          { "@type": "AdministrativeArea", "name": "Gironde" }
+        ],
         "url": "https://www.bessonboisetzinc.fr",
-        "description": "Charpente traditionnelle, ossature bois, zinguerie et aménagement bois sur le Bassin d'Arcachon. Devis gratuit."
+        "image": "https://www.bessonboisetzinc.fr/og-image.png",
+        "description": "Charpente traditionnelle, ossature bois, zinguerie et aménagement bois sur le Bassin d'Arcachon. Devis gratuit.",
+        "priceRange": "€€"
       }
     </script>
+
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.bessonboisetzinc.fr/sitemap.xml" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
